@@ -1,6 +1,6 @@
 {
   "name": "umuti-business-request-table",
-  "version": "1.0.5",
+  "version": "1.0.8",
   "description": "\"a component which render umuti business request table\"",
   "main": "dist/index.js",
   "scripts": {

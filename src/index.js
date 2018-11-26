@@ -12,7 +12,10 @@ class IpositaBusinessRequestTable extends Component {
         const { 
             createBtnClass,
             createBtn,
-            requestTable,
+            requestTableOne,
+            requestTableTwo,
+            requestTableThree,
+            requestTableFour,
             sideView,
             umutiTable,
             tabOneTitle,
@@ -20,7 +23,8 @@ class IpositaBusinessRequestTable extends Component {
             tabThreeTitle,
             tabFourTitle,
             requestTableClass,
-            requestTablePadding
+            requestTablePadding,
+            requestCreatePadding
         } = this.props;
 
         return (
@@ -60,19 +64,22 @@ class IpositaBusinessRequestTable extends Component {
                                             <Tab><h5><span className="table-title">{tabFourTitle}</span></h5></Tab>
                                         </TabList>
                                         <TabPanel>
-                                            {requestTable}
+                                            {requestTableOne}
                                         </TabPanel>
                                         <TabPanel>
-                                            {requestTable}
+                                            {requestTableTwo}
                                         </TabPanel>
                                         <TabPanel>
-                                            {requestTable}
+                                            {requestTableThree}
+                                        </TabPanel>
+                                        <TabPanel>
+                                            {requestTableFour}
                                         </TabPanel>
                                     </Tabs>
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+                        <div className="col-lg-7 col-md-7 col-sm-12 col-xs-12" style={{padding: requestCreatePadding}}>
                             <div className="umuti-box-shadow">
                                 {sideView}
                             </div>
