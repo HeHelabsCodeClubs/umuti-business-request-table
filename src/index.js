@@ -24,7 +24,8 @@ class IpositaBusinessRequestTable extends Component {
             tabFourTitle,
             requestTableClass,
             requestTablePadding,
-            requestCreatePadding
+            requestCreatePadding,
+            createClick
         } = this.props;
 
         return (
@@ -40,7 +41,7 @@ class IpositaBusinessRequestTable extends Component {
                                         </div>
                                         <div className="col-lg-6 header-buttons">
                                             <span className="submitButton">
-                                                <button className={createBtnClass}>Filter</button>
+                                                <button onClick={() => createClick()} className={createBtnClass}>Create a Request</button>
                                             </span>
                                             {createBtn}
                                         </div>
@@ -54,7 +55,7 @@ class IpositaBusinessRequestTable extends Component {
                     <div className="row reset-row">
                         <div className="col-lg-5 col-md-5 col-sm-12 col-xs-12" style={{padding: requestTablePadding}}>
                             <div className={`tableDiv ${umutiTable}`}>
-                                <div className="create-btn"><button className="white-btn">+ Create a Request</button></div>
+                                <div className="create-btn"><button onClick={() => createClick()} className="white-btn">+ Create a Request</button></div>
                                 <div className={requestTableClass}>
                                     <Tabs>
                                         <TabList>
